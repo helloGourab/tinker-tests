@@ -31,6 +31,18 @@ wheels = [
 ]
 
 [[package]]
+name = "aspose-words"
+version = "25.6.0"
+source = { registry = "https://pypi.org/simple" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/7e/e4/6879eb9b4ee06660d251d44041ac4d4ff51863eccb26280912222d0a4179/aspose_words-25.6.0-py3-none-macosx_10_14_x86_64.whl", hash = "sha256:1a1fb2054d2efb12ff43050dd3dfdfb63c5c46489c2fc8aa29a9b97698ed5104", size = 86273470, upload-time = "2025-06-12T06:59:47.142Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/71/d488c67ebb1c07aaa0a6d7e20ceffbff26d3d2f01c2574e620fa18e30376/aspose_words-25.6.0-py3-none-macosx_11_0_arm64.whl", hash = "sha256:904ff7fac3c2f08b13c63d22c3949f23e6fd3296023a80d6ee7dbd76ca018105", size = 73250925, upload-time = "2025-06-12T06:59:57.256Z" },
+    { url = "https://files.pythonhosted.org/packages/71/da/db9e4bcf135c688f24c9181f3e8b5a0185d5a8858b74c5ceb0e43183c1da/aspose_words-25.6.0-py3-none-manylinux1_x86_64.whl", hash = "sha256:bcb147f0c17cbfb4990e2e071f5052e5428e572365f67f5d8f965a9891a26c86", size = 90357022, upload-time = "2025-06-12T07:00:08.109Z" },
+    { url = "https://files.pythonhosted.org/packages/f2/2c/ede1b1ca29e73ff1b1f475dde1e5181f29f53b33fa417aa2cfd094ca20c2/aspose_words-25.6.0-py3-none-win32.whl", hash = "sha256:c553f970dde03c943364e9c6b78ba6501db04ba17ab2e823d12d7588267f9a18", size = 59790164, upload-time = "2025-06-12T07:00:16.481Z" },
+    { url = "https://files.pythonhosted.org/packages/92/9c/d0ad22734c50ddc9e99c3e5e9f9d0c984477793e0cabc20e0f18aa12be30/aspose_words-25.6.0-py3-none-win_amd64.whl", hash = "sha256:95e59bb5fe0e63bea23c1b0b4d579e82e42315c8086a373e6675f439640fdfbe", size = 68252358, upload-time = "2025-06-12T07:00:26.019Z" },
+]
+
+[[package]]
 name = "cachetools"
 version = "5.5.2"
 source = { registry = "https://pypi.org/simple" }
@@ -299,12 +311,14 @@ name = "test"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "aspose-words" },
     { name = "google-genai" },
     { name = "python-dotenv" },
 ]
 
 [package.metadata]
 requires-dist = [
+    { name = "aspose-words", specifier = ">=25.6.0" },
     { name = "google-genai", specifier = ">=1.21.1" },
     { name = "python-dotenv", specifier = ">=1.1.0" },
 ]
